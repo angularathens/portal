@@ -24,8 +24,7 @@ jobs:
       env:
         FTP_SERVER: 88.99.254.37
         PORT: 21
-        FTP_USERNAME: angularathens
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        FTP_USERNAME: angularathensdevelop
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD_DEVELOP }}
         LOCAL_DIR: dist/portal
-        REMOTE_DIR: develop
         ARGS: --delete
