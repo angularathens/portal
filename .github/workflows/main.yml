@@ -26,5 +26,5 @@ jobs:
         PORT: 21
         FTP_USERNAME: angularathens
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        LOCAL_DIR: dist%2Fportal
+        LOCAL_DIR: dist/portal
         ARGS: --delete --verbose

@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AngularAthensComponent } from './angular-athens/angular-athens.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AngularAthensComponent
   ],
   imports: [
     BrowserModule,
