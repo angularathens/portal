@@ -1,8 +1,8 @@
-name: Publish portal
+name: Publish Portal on Develop
 on:
   push:
     branches:
-      - master
+      - develop
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -27,4 +27,5 @@ jobs:
         FTP_USERNAME: angularathens
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         LOCAL_DIR: dist
-        ARGS: --delete --verbose
+        REMOTE_DIR: develop
+        ARGS: --delete
