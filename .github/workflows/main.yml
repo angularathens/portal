@@ -1,5 +1,8 @@
 name: Publish portal
-on: push
+on:
+  push:
+    branches:
+      - master
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -21,8 +24,7 @@ jobs:
       env:
         FTP_SERVER: 88.99.254.37
         PORT: 22
-        FTP_USERNAME: myFtpUserName
+        FTP_USERNAME: angularathens
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         LOCAL_DIR: dist
         ARGS: --delete
-        # --delete arg will delete files on the server if you've deleted them in git
